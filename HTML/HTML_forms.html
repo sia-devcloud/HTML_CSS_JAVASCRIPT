@@ -10,8 +10,9 @@
   <h1>Travel Form</h1>
   </div>
   <form>
-    <label for="fname">First Name:</label>
-    <input type="tex" id="fname" name="fname"><br><br>
+    <!--Since both <label> and <input> are inline elements, the <label> displays the label text, while the <input> displays an empty text box in this case.-->
+    <label for="fname">First Name:</label> <!--This gives label to the text box created in the below-->
+    <input type="text" id="fname" name="fname"><br><br><!--This creates an empty text box-->
     <label for="lname">Last Name:</label>
     <input type="text" id="lname" name="lname">
     <input type="submit" value="Submit">
