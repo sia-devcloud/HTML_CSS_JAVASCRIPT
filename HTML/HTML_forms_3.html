@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <body>
+  <form>
+   <label for="meal">What do you like to have in meal?</label>
+   <br>
+   <input type="text" name="food" id="meal">
+   <br>
+   <label for="volume">Volume control</label>
+   <input type="range" id="volume" name="volume" min="0" max="100" step="2">
+   <p>What is the sum of 1+1?</p>
+   <input type="radio" id="two" value="2" name="answer">
+   <label for="two">2</label>
+   <br>
+   <input type="radio" id="eleven" value="11" name="answer">
+   <label for="eleven">11</label>
+   <br>
+   <label for="lunch">What do you like to have in lunch?</label>
+   <select id="lunch" name="lunch">
+    <option value="burger">Burger</option>
+    <option value="pizza">Pizza</option>
+    <option value="momo">Momo</option>
+    <option value="chawmin">Chawmin</option> 
+   </select>
+   <label for="city">Best city in India</label>
+   <input type="text" id="city" name="city" list="cities">
+   <datalist id="cities">
+    <option value="Hyderabad"></option>
+    <option value="Bengaluru"></option>
+    <option value="Kolkata"></option>
+    <option value="Pune"></option>
+    <option value="Guwahati"></option>
+   </datalist>
+  </form>
+ </body>
+</html>
