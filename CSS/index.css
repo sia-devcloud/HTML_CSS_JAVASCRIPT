@@ -1,0 +1,17 @@
+
+   h1{
+    display:inline;
+    color:red;
+    font-size:30px;
+    background-color: yellow
+   }
+   .check{
+    color:red
+   }
+   p,h2{
+    color:black;
+    background-color:orange;
+   }
+   #test{
+    color:blue
+   }
