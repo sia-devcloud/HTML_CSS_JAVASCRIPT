@@ -25,7 +25,12 @@
    div p{
     color:red
    }
-
+   #check_ds h5{
+    color:blue
+   }
+   .check_class > h5{
+    color:orange
+   }
       </style>
   </head>
   <body>
@@ -51,6 +56,18 @@
      <section>
         <p>This is checking indirect child</p>
      </section>
+   </div>
+   <!--Descendant selector with ID selector-->
+   <div id="check_ds">
+    <h5>This is for checking descendant with ID selector</h5>
+   </div>
+   <div class="check_class">
+      <h5>Checking descendant with same header element</h5>
+   </div>
+   <div class="check_class">
+    <section>
+    <h5>Checking Descendant selectors</h5>
+    </section>
    </div>
   </body>
 </html>
