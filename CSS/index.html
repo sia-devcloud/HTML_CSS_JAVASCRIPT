@@ -2,7 +2,6 @@
 <html>
   <head>
    <title>CSS foreground color</title>
-  </head>
   <style>
    h1{
     display:inline;
@@ -10,13 +9,25 @@
     font-size:30px;
     background-color: yellow
    }
-   p{
-    color:black;
-    background-color:blueviolet;
+   .check{
+    color:red
    }
-  </style>
+   p,h2{
+    color:black;
+    background-color:orange;
+   }
+   #test{
+    color:blue
+   }
+   </style>
+  </head>
   <body>
    <h1>Welcome to CSS foreground color</h1>
    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fuga sed incidunt quae quas possimus natus aut, quidem rem. Tempore, vel voluptatum officiis nostrum numquam dolore ut deleniti voluptate blanditiis.</p>
+   <!--Applying inline CSS-->
+   <p style="color:blue; background-color:yellowgreen;">This is an example of using inline CSS</p>
+   <h2 style="color:blue background-color:red;">Another case of adding inline CSS</h2>
+   <h3 class="check">This is an example of class selector</h3>
+   <p id="test">ID selector example</p>
   </body>
 </html>
