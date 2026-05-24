@@ -1,6 +1,18 @@
 button{
    background-color:red;
 }
+h1{
+   text-align:center;
+}
+p{
+   text-align:center;
+}
+h4{
+   text-align:center;
+   text-decoration:underline;
+   font-weight:600;
+   font-family:roboto;
+}
 
 /* 
    h1{
