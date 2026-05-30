@@ -1,0 +1,8 @@
+#product_1{
+  background-color:orange;
+  background-image: url(Jeans.jpeg);
+  width:700px;
+  height:650px;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
