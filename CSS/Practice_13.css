@@ -1,0 +1,45 @@
+#P_left{
+   background-color:orangered;
+   height:70px;
+   width:200px;
+   border:7px dashed blue;
+   padding-left:20px;
+}
+#P_right{
+   background-color:blueviolet;
+   height:80px;
+   width:200px;
+   border:3px solid red;
+   padding-right:25px;
+}
+#P_top{
+   padding-top:20px;
+   height:80px;
+   width:200px;
+   background-color:burlywood;
+   border:5px solid blue;
+}
+#P_bottom{
+   background-color:chocolate;
+   padding-bottom:20px;
+   height:80px;
+   width:200px;
+   border:5px dashed whitesmoke;
+}
+#Padding{
+   background-color: chartreuse;
+   height:80px;
+   width:200px;
+   padding:20px;
+   border:3px solid red;
+}
+#V_Padding{
+   background-color:azure;
+   border:4px solid yellow;
+   height:80px;
+   width:200px;
+   padding-left:60px;
+   padding-right:45px;
+   padding-top:30px;
+   padding-bottom:15px;
+}
