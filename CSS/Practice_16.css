@@ -7,6 +7,8 @@
   width:150px;
   position:static;
   top:10px;
+  background-image: url("Nature_Scene.jpg");
+  background-size: cover;
 }
 #box-2{
  background-color:blue;

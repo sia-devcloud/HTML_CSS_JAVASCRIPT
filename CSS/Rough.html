@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" href="Practice_16.css">
+    <style>
+       #parent div{
+    display:inline-block;
+}
+#box-1{
+ background-color:red;
+  height:100px;
+  width:150px;
+  position:absolute;
+  top:30px;
+  z-index:8
+}
+#box-2{
+ background-color:blue;
+  height:100px;
+  width:150px;
+  position:absolute;
+  top:50px;
+  left:40px;
+  z-index:4;
+}
+#box-3{
+ background-color:orange;
+  height:100px;
+  width:150px;
+  position:absolute;
+  top:70px;
+  left:70px;
+}
+#box-4{
+background-color:blueviolet;
+ height:100px;
+ width:150px;
+ position:absolute;
+ top:90px;
+ left:90px;
+}
+
+    </style>
+ </head>
+ <body>
+    <div id="parent">
+       <div id="box-1">Box-1</div>
+       <div id="box-2">Box-2</div>
+       <div id="box-3">Box-3</div>
+       <div id="box-4">Box-4 </div>
+    </div>
+ </body>
+</html>
