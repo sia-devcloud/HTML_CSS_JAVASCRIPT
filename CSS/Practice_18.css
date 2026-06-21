@@ -7,11 +7,18 @@ div:active{
 div{
  height:100px;
  width:150px;
+ position:absolute;
+ top: 200px;
+ left: 200px;
  background-color: blue;
  transition-property: all;
  transition-duration:2s;
  transition-timing-function:ease-in;
- transition-delay:5s;
+ transition-delay:2s;
+ /* transform: rotate(180deg); */
+ /* rotate: x 230deg; */
+ /* rotate: y 89.70deg; */
+ rotate: z 90deg;
 }
 @media (min-width:600px){
  div{
