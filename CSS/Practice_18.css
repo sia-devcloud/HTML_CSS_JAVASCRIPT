@@ -6,19 +6,21 @@ div:active{
 }
 div{
  height:100px;
- width:150px;
+ width:100px;
  position:absolute;
  top: 200px;
  left: 200px;
  background-color: blue;
  transition-property: all;
  transition-duration:2s;
- transition-timing-function:ease-in;
+ /* transition-timing-function:ease-in; */
  transition-delay:2s;
  /* transform: rotate(180deg); */
  /* rotate: x 230deg; */
  /* rotate: y 89.70deg; */
  rotate: z 90deg;
+ /* transform: scale(0.5); */
+ transform: scale(3,1)
 }
 @media (min-width:600px){
  div{
