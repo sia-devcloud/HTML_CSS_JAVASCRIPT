@@ -13,15 +13,17 @@ div{
  background-color: blue;
  transition-property: all;
  transition-duration:2s;
- /* transition-timing-function:ease-in; */
- transition-delay:2s;
+ transition-timing-function:ease-in;
+ transition-delay:3s;
  /* transform: rotate(180deg); */
  /* rotate: x 230deg; */
  /* rotate: y 89.70deg; */
  /* rotate: z 90deg; */
  /* transform: scale(0.5); */
  /* transform: scale(3,1) */
- transform:translateX(70px);
+ /* transform:translateX(70px); */
+ /* transform:translate(160px, 200px); */
+ transform:skew(60deg);
 }
 @media (min-width:600px){
  div{
