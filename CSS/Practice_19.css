@@ -8,20 +8,43 @@ div{
  padding-top:50px;
  padding-left:40px;
  box-sizing: border-box;
-animation-name: AniMate;
+/* animation-name: AniMate;
 animation-duration: 4s;
 animation-timing-function:ease-in;
 animation-delay:1s;
 animation-iteration-count:infinite;
-animation-direction:alternate-reverse;
+animation-direction:normal; */
 /* animation-direction:reverse; */
 /* animation:AniMate 1s ease-in 7 */
+animation:AniMate 4s ease-in 1s 3 reverse;
 }
 @keyframes AniMate{
+   0%{
+      background-color: darkgoldenrod;
+      left:0px;
+      font-size:5px;
+   }
+   50%{
+      background-color: chartreuse;
+      font-size:40px;
+   }
+   80%{
+      background-color: red;
+      font-size:80px;
+   }
+   100%{
+      background-color: blue;
+      left:300px;
+      color:white;
+      font-size:10px;
+   }
+}
+
+/* @keyframes AniMate{
  from
      {left:0px;
   }
   to
      {left:500px;
   }
-}
+} */
