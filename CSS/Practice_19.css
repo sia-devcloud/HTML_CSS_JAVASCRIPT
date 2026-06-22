@@ -1,0 +1,27 @@
+div{
+ height:150px;
+ width:150px;
+ background-color:blueviolet;
+ position:absolute;
+ top:80px;
+ left:90px;
+ padding-top:50px;
+ padding-left:40px;
+ box-sizing: border-box;
+animation-name: AniMate;
+animation-duration: 4s;
+animation-timing-function:ease-in;
+animation-delay:1s;
+animation-iteration-count:infinite;
+animation-direction:alternate-reverse;
+/* animation-direction:reverse; */
+/* animation:AniMate 1s ease-in 7 */
+}
+@keyframes AniMate{
+ from
+     {left:0px;
+  }
+  to
+     {left:500px;
+  }
+}

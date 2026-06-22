@@ -1,44 +1,29 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <style>
-         div{
-            background-color:aqua;
-            height:40px;
-            flex-direction:row;
-            display:flex;
-            justify-content: space-around;
-            margin-top:10px;
-            
-         }
-         #outer{
-            height:400px;
-            width:500px;
-            background-color: red;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-         }
-         #inner{
-            border:2px solid olive;
-            height:200px;
-            width:250px;
-            
-         }
-      </style>
-   </head>
-   <body>
-      <div id="navbar">
-         <a href="">Electronics</a>
-         <a href="">Cloths</a>
-         <a href="">Daily Fresh</a>
-         <a href="">Home Needs</a>
-      </div>
-      <div id="outer">
-         <div id="inner">
-
-         </div>
-
-      </div>
-   </body>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Transform</title>
+   <style>
+      div{
+         position:absolute;
+         top: 200px;
+         left:300px;
+         height:200px;
+         width:250px;
+         padding-left: 100px;
+         padding-top:100px;
+         box-sizing: border-box;
+         background-color: blue;
+         transition-delay:1s;
+      }
+      div:hover{
+         transform:rotate(45deg) scale(0.5, 0.5) translate(900px);
+          transition-timing-function: ease-in;
+      }
+   </style>
+</head>
+<body>
+   <div id="Mult_Transform">Mlti_Tr</div>
+</body>
 </html>
