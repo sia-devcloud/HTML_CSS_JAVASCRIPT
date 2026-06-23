@@ -1,0 +1,28 @@
+      #Project-container{
+         height:30px;
+         width:90%;
+         background-color: aqua;
+         border:2px solid black;
+         border-radius: 23px;
+      }
+      #Project-bar{
+         height:100%;
+         /* width:50%; */
+         border-radius: 25px;
+         background-color: blue;
+         animation:AniMate 9s normal;
+      }
+      @keyframes AniMate{
+         0%{
+            width:0%;
+         }
+         90%{
+            width:95%;
+         }
+         95%{
+            width:70%;
+         }
+         100%{
+            width:100%;
+         }
+      }
