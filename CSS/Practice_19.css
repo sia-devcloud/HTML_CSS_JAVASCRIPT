@@ -16,17 +16,19 @@ animation-iteration-count:infinite;
 animation-direction:normal; */
 /* animation-direction:reverse; */
 /* animation:AniMate 1s ease-in 7 */
-animation:AniMate 4s ease-in 1s 3 reverse;
+animation:AniMate 5s ease-in 1s 2 reverse;
+/* animation-play-state: running; */
+animation-fill-mode:both;
 }
 @keyframes AniMate{
    0%{
       background-color: darkgoldenrod;
       left:0px;
-      font-size:5px;
+      font-size:90px;
    }
    50%{
       background-color: chartreuse;
-      font-size:40px;
+      font-size:10px;
    }
    80%{
       background-color: red;
@@ -36,7 +38,7 @@ animation:AniMate 4s ease-in 1s 3 reverse;
       background-color: blue;
       left:300px;
       color:white;
-      font-size:10px;
+      font-size:60px;
    }
 }
 
