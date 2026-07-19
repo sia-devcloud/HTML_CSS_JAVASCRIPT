@@ -1,0 +1,41 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+h2{
+ font-size: 55px;;
+}
+body{
+ display: flex;
+ justify-content: center;
+}
+.btn{
+ display: flex;
+ width: 90px;
+ height: 30px;
+ font-size: 25px;
+ text-align: center;
+ cursor: pointer;
+}
+input, textarea,button{
+ background-color: white;
+ margin-top: 28px;
+ display: flex;
+ margin:10px;
+ text-align: center;
+ width: 400px;
+ height: 80px;
+ font-size: 35px;
+ 
+}
+#main{
+ background-color: antiquewhite;
+ width: 100vw;
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ border-radius: 10px;
+ align-items: center;
+ /* margin-top:20px; */
+}
