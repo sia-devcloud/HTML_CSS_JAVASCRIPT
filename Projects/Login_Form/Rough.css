@@ -1,0 +1,99 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width:100vw;
+ height: 100vh;
+ background-color: antiquewhite;
+}
+.container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color:white;
+ flex-direction: column;
+ border-radius: 0.5rem;
+ padding: 4rem 6rem;
+}
+.container form{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ position:relative
+}
+.container h2{
+ font-size:2rem;
+ margin:1.5rem;
+}
+.inputArea{
+ display: flex;
+ flex-direction: column;
+ padding-bottom: 0.6rem;
+}
+.container form input{
+ font-weight: lighter;
+ border: none;
+}
+input:focus {
+    outline: none;
+}
+.container form .username{
+ margin-bottom: 0.1rem;
+}
+.userArea {
+    margin: .5rem;
+    border-bottom: 1px solid gray;
+}
+.Forgot_pass{
+    align-self: flex-end;
+    cursor: pointer;
+    bottom:10rem;
+    color: rgb(213, 109, 104);
+    margin-bottom: 0.7rem;
+}
+.login_btn{
+    border:none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    padding:0.4rem 0.3rem;
+    margin-bottom: 1.5rem;
+    margin-top:.5rem;
+    background: linear-gradient(to left, #FAAFcF, #e30494);
+}
+.alt_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.alt_login p{
+    margin-bottom: 0.5rem;
+}
+.alt_login ul{
+    margin-bottom: 2rem;
+    display: flex;
+    list-style: none;
+    
+}
+.signUp{
+    cursor: pointer;
+}
+.alt_login_options{
+    display: flex;
+    gap: 1rem;
+}
+.alt_login_options li i{
+    height: 30px;
+    width:35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20rem;
+}
+

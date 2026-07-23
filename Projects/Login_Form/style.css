@@ -1,0 +1,76 @@
+*{
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: antiquewhite;
+}
+.container{
+ background-color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ padding: 1rem 3rem;
+}
+.container form{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ position: relative
+}
+.container h2{
+ font-size: 1.5rem;
+ margin: 2rem;
+}
+.container form input{
+ font-weight: lighter;
+ border:none;
+}
+input:focus{
+ outline: none;
+}
+.container form .username{
+ margin-bottom: 0.7rem;
+}
+.inputDiv{
+ display: flex;
+ flex-direction: column;
+ padding-bottom: 0.8rem;
+}
+.container form .Forgot_pass{
+align-self:flex-end;
+ right: 0rem;
+ bottom:17rem;
+ font-size:0.8rem;
+ cursor: pointer;
+}
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:0.8rem;
+}
+.form_button{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn {
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    padding: 0.7rem 0.8rem;
+    background: linear-gradient(to right, #8d68c5, #e34494);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+
