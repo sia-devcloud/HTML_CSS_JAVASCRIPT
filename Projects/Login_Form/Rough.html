@@ -1,39 +1,165 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">
-  <link rel="stylesheet" href="Rough.css">
-  <script src="https://kit.fontawesome.com/3c13c40351.js" crossorigin="anonymous"></script>
- </head>
- <body>
-   <div class="container">
-      <h2 class="formTitle">Login</h2>
-      <form action="">
-       <div class="inputArea">
-          <label for="name" class="username">Username</label>
-          <div class="userArea">
-            <i class="fa-solid fa-user"></i><input type="name" id="username" name="name" placeholder="Enter your username" required>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeeksHelp - Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="Rough.css" />
+</head>
+<body>
+
+  <!-- Small Screen Warning -->
+  <div class="mobile-warning">
+    <p>Sorry, this page doesn't support your device. Please use a large screen device to see this page.</p>
+  </div>
+
+  <!-- Pure CSS Checkbox Hack Controller -->
+  <input type="checkbox" id="sidebar-toggle" hidden />
+
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span class="link-text">GeeksHelp</span>
+      </div>
+      
+      <nav class="nav-links">
+        <a href="#" class="active"><i class="fa-solid fa-house"></i> <span class="link-text">Dashboard</span></a>
+        <a href="#"><i class="fa-solid fa-folder-open"></i> <span class="link-text">Content</span></a>
+        <a href="#"><i class="fa-solid fa-chart-line"></i> <span class="link-text">Analytics</span></a>
+        <a href="#"><i class="fa-solid fa-thumbs-up"></i> <span class="link-text">Likes</span></a>
+        <a href="#"><i class="fa-solid fa-comment"></i> <span class="link-text">Comments</span></a>
+        <a href="#"><i class="fa-solid fa-bookmark"></i> <span class="link-text">Saves</span></a>
+        <a href="#"><i class="fa-solid fa-share-nodes"></i> <span class="link-text">Share</span></a>
+        <a href="#"><i class="fa-solid fa-rectangle-ad"></i> <span class="link-text">Ads</span></a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#"><i class="fa-solid fa-gear"></i> <span class="link-text">Settings</span></a>
+        <a href="#"><i class="fa-solid fa-right-from-bracket"></i> <span class="link-text">Logout</span></a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <div class="top-left">
+          <!-- The label acts as the 3-line click button -->
+          <label for="sidebar-toggle" class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="raju" />
           </div>
-       </div>
-       <div class="inputArea">
-          <label for="password" class="username">Password</label>
-          <div class="userArea">
-          <i class="fa-solid fa-key"></i><input type="password" id="password" name="password" placeholder="Type your password">
+        </div>
+
+        <div class="user-profile">
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
+      </header>
+
+      <!-- Dashboard Cards -->
+      <section class="dashboard-overview">
+        <h2>Dashboard</h2>
+        <div class="cards-grid">
+          <div class="card card-likes">
+            <div class="card-info">
+              <span class="card-title">Total Likes</span>
+              <h3 class="card-value">50,120</h3>
+            </div>
+            <i class="fa-solid fa-thumbs-up card-icon"></i>
           </div>
-       </div>
-       <span class="Forgot_pass">Forgot password</span>
-       <button class="login_btn">Login</button>
-       <div class="alt_login">
-          <p>Or Sign Up Using</p>
-          <ul class="alt_login_options">
-            <a href="https://www.facebook.com" target="_blank"><li><i class="fa-brands fa-facebook"></i></li></a>
-            <a href="https://www.telegram.com" target="_blank"><li><i class="fa-brands fa-telegram"></i></li></a>
-            <a href="https://www.google.com" target="_blank"><li><i class="fa-brands fa-google"></i></li></a>
-          </ul>
-          <p class="signUp">SIGN UP</p>
-       </div>
-     </form>
-   </div>
- </body>
+
+          <div class="card card-comments">
+            <div class="card-info">
+              <span class="card-title">Total Comments</span>
+              <h3 class="card-value">25,120</h3>
+            </div>
+            <i class="fa-solid fa-comment card-icon"></i>
+          </div>
+
+          <div class="card card-share">
+            <div class="card-info">
+              <span class="card-title">Total Share</span>
+              <h3 class="card-value">10,320</h3>
+            </div>
+            <i class="fa-solid fa-share-nodes card-icon"></i>
+          </div>
+
+          <div class="card card-saves">
+            <div class="card-info">
+              <span class="card-title">Total Saves</span>
+              <h3 class="card-value">20,129</h3>
+            </div>
+            <i class="fa-solid fa-bookmark card-icon"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Activity Table -->
+      <section class="recent-activity">
+        <h2>Recent Activity</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Joined</th>
+                <th>Type</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Raju</td>
+                <td>contact.geekshelp@gmail.com</td>
+                <td>01-12-2020</td>
+                <td>Member</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Jassi</td>
+                <td>jassisheoran@gmail.com</td>
+                <td>03-01-2022</td>
+                <td>New</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td>johndoe@gmail.com</td>
+                <td>22-10-2020</td>
+                <td>New</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Franda</td>
+                <td>frand.geekshelp@gmail.com</td>
+                <td>23-12-2020</td>
+                <td>Member</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Raj</td>
+                <td>testmain@gmail.com</td>
+                <td>20-12-2019</td>
+                <td>New</td>
+                <td>Active</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
 </html>
