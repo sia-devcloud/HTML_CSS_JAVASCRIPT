@@ -9,26 +9,34 @@
  </head>
   <body>
     <div class="mainContainer">
-      <div class="sidebar">
+      <!-- Sidebar starts-->
+      <aside class="sidebar">
         <i class="fa-solid fa-graduation-cap"></i>
         <span>SIA's Help</span>
-        <div class="menuOption">
+        <nav class="menuOption">
           <ul>
-            <i class="fa-solid fa-house"></i><a href="">Dashboard</a>
-            <i class="fa-solid fa-copy"></i><a href="">Content</a>
-            <i class="fa-solid fa-chart-line"></i><a href="">Analytics</a>
-            <i class="fa-solid fa-thumbs-up"></i><a href="">Likes</a>
-            <i class="fa-solid fa-comment"></i><a href="">Comments</a>
-            <i class="fa-solid fa-download"></i><a href="">Downloads</a>
-            <i class="fa-solid fa-share"></i><a href="">Share</a>
-            <i class="fa-solid fa-rectangle-ad"></i><a href="">Ads</a>
+            <li><i class="fa-solid fa-house"></i><a href="">Dashboard</a></li>
+            <li><i class="fa-solid fa-copy"></i><a href="">Content</a></li>
+            <li><i class="fa-solid fa-chart-line"></i><a href="">Analytics</a></li>
+            <li><i class="fa-solid fa-thumbs-up"></i><a href="">Likes</a></li>
+            <li><i class="fa-solid fa-comment"></i><a href="">Comments</a></li>
+            <li><i class="fa-solid fa-download"></i><a href="">Downloads</a></li>
+            <li><i class="fa-solid fa-share"></i><a href="">Share</a></li>
+            <li><i class="fa-solid fa-rectangle-ad"></i><a href="">Ads</a></li>
           </ul>
-        </div>
+        </nav>
         <div class="sideBottom">
-          <i class="fa-solid fa-gear"></i><a href="">Settings</a>
-          <i class="fa-solid fa-power-off"></i><a href="">Logout</a>
+          <div class="bottomItem">
+            <li><i class="fa-solid fa-gear"></i><a href="">Settings</a></li>
+          </div>
+          <div class="bottomItem">
+            <li><i class="fa-solid fa-power-off"></i><a href="">Logout</a></li>
+          </div>
         </div>
-      </div>
+      </aside>
+      <!--Sidebar Ends-->
+
+      <!--Right side-->
       <div class="Dashboard">
         <div class="rightHeader">
           <i class="fa-solid fa-bars"></i>
@@ -60,6 +68,49 @@
           </div>
         </div>
         <!-- Card information Ends -->
+         <h3>Recent Activity</h3>
+         <!--tableTable-->
+         <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Joined</th>
+                <th>Subscription</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Shahinur</td>
+                <td>xyzabc@gmail.com</td>
+                <td>03-07-2022</td>
+                <td>Foundation</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Islam</td>
+                <td>hbxyzabm@gmail.com</td>
+                <td>02-11-2021</td>
+                <td>Premium</td>
+                <td>Inactive</td>
+              </tr>
+              <tr>
+                <td>Ahmed</td>
+                <td>owix@gmail.com</td>
+                <td>08-02-2024</td>
+                <td>Enhanced</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Ankit</td>
+                <td>rrzxyz@gmail.com</td>
+                <td>01-05-2025</td>
+                <td>Platinium</td>
+                <td>Suspended</td>
+              </tr>
+            </tbody>
+         </table>
       </div>
     </div>
   </body>

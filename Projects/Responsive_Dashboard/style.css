@@ -1,0 +1,103 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+body{
+ height: 100vh;
+ width:100vw;
+}
+.mainContainer{
+ display: flex;
+ height: 100vh;
+ width: 100vw;
+}
+.sidebar{
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ width:8rem;
+}
+.menuOption{
+ display: flex;
+ flex-direction: column;
+ margin-top:2rem;
+}
+.menuOption ul{
+ list-style: none;
+}
+.menuOption ul li{
+ margin-top: 1.5rem;
+}
+.sideBottom{
+ display: flex;
+ flex-direction: column;
+ margin-top:auto;
+ gap: 1rem;
+ list-style: none;
+}
+.Dashboard{
+ flex:1;
+}
+.rightHeader{
+ display: flex;
+ align-items: center;
+ margin-top: 1rem;
+ gap:2rem;
+ padding:1rem 1.2rem;
+}
+.rightHeader input {
+ flex:1 ;
+ padding:0.4rem;
+ border-radius: 0.8rem;
+ border:0.1rem solid black ;
+}
+p{
+ margin-top: 1rem;
+}
+.cards{
+ display: flex;
+ justify-content: space-between;
+ 
+ margin-left:2rem;
+ margin-right:2rem;
+}
+.cardsLike{
+ background-color: blue;
+ height: 9rem;
+ width:10rem;
+ border-radius:1rem;
+ text-align: center;
+ margin:1rem;
+}
+.cardsComments{
+ background-color:blueviolet;
+ height: 9rem;
+ width:10rem;
+ border-radius:1rem;
+ text-align: center;
+ margin:1rem;
+}
+.cardsShare{
+ background-color:chartreuse;
+ height: 9rem;
+ width:10rem;
+ border-radius:1rem;
+ text-align: center;
+ margin:1rem;
+}
+.cardDownload{
+ background-color:aqua;
+ height: 9rem;
+ width:10rem;
+ border-radius:1rem;
+ text-align: center;
+ margin:1rem;
+}
+table{
+ width:100%;
+ text-align: left;
+}
+th, td{
+ padding:0.7rem 1rem;
+}
