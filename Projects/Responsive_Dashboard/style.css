@@ -40,10 +40,18 @@ body{
 }
 .menuOption ul li{
  margin-top: 1.5rem;
+ cursor:pointer;
 }
 .menuOption ul li a{
  text-decoration:none;
  margin-left: 0.2rem;
+}
+.menuOption ul li{
+ transform-origin: left;
+ transition:transform 0.2s ease;
+}
+.menuOption ul li:hover{
+ transform:scale(1.2);
 }
 .sideBottom{
  display: flex;
@@ -52,6 +60,11 @@ body{
  gap: 1rem;
  list-style: none;
  margin-bottom: 1.5rem;
+}
+.sideBottom li:hover{
+ transform-origin: left;
+ transform:scale(1.2);
+ cursor:pointer;
 }
 .sideBottom li a{
  text-decoration:none;
@@ -68,6 +81,10 @@ body{
  padding-right:1rem;
  padding-left:0.3rem;
 }
+.rightHeader label:hover{
+ transform:scale(1.4);
+ color:brown
+}
 .fa-bars{
  cursor:pointer;
 }
@@ -77,10 +94,16 @@ body{
  border-radius: 0.8rem;
  border:0.1rem solid black ;
 }
+.fa-user{
+ cursor:pointer;
+ 
+}
+.fa-user:hover{
+ transform:scale(1.4)
+}
 .cards{
  display: flex;
  justify-content: space-between;
- 
  margin-left:2rem;
  margin-right:2rem;
 }
@@ -91,6 +114,7 @@ body{
  border-radius:1rem;
  text-align: center;
  margin:1rem;
+ padding-top:1.8rem;
 }
 .cardsComments{
  background-color:blueviolet;
@@ -99,6 +123,7 @@ body{
  border-radius:1rem;
  text-align: center;
  margin:1rem;
+ padding-top:1.8rem;
 }
 .cardsShare{
  background-color:chartreuse;
@@ -107,6 +132,7 @@ body{
  border-radius:1rem;
  text-align: center;
  margin:1rem;
+ padding-top:1.8rem;
 }
 .cardDownload{
  background-color:aqua;
@@ -115,6 +141,7 @@ body{
  border-radius:1rem;
  text-align: center;
  margin:1rem;
+ padding-top:1.8rem;
 }
 .Dashboard h3{
  margin-left: 0.4rem;
