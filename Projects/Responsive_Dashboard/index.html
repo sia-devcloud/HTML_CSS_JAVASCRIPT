@@ -8,11 +8,14 @@
   <script src="https://kit.fontawesome.com/3c13c40351.js" crossorigin="anonymous"></script>
  </head>
   <body>
+    <input type="checkBox" id="hbrgrClick" name="humburger" hidden>
     <div class="mainContainer">
       <!-- Sidebar starts-->
       <aside class="sidebar">
-        <i class="fa-solid fa-graduation-cap"></i>
-        <span>SIA's Help</span>
+        <div class="sidebarTitle">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>SIA's Help</h3>
+        </div>
         <nav class="menuOption">
           <ul>
             <li><i class="fa-solid fa-house"></i><a href="">Dashboard</a></li>
@@ -39,11 +42,13 @@
       <!--Right side-->
       <div class="Dashboard">
         <div class="rightHeader">
-          <i class="fa-solid fa-bars"></i>
+          <label for="hbrgrClick">
+            <i class="fa-solid fa-bars"></i>
+          </label>
           <input type="text" placeholder="Shahinur">
           <i class="fa-solid fa-user"></i>
         </div>
-        <p>Dashboard</p>
+        <h3>Dashboard</h3>
         <!-- Card information Strat -->
         <div class="cards">
           <div class="cardsLike">
