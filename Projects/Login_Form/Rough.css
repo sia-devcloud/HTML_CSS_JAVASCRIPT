@@ -299,6 +299,8 @@ td {
 }
 
 @media (max-width: 768px) {
-  .dashboard-container { display: none; }
-  .mobile-warning { display: flex; }
+  .dashboard-container {
+     display: none; }
+  .mobile-warning { 
+    display: flex; }
 }
