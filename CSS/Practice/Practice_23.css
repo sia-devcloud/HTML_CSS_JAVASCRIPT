@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .mainContainer{
+.mainContainer{
             display: grid;
             border:1px solid black;
             grid-template-columns:180px 180px 100px;
@@ -38,20 +32,7 @@
             grid-row:1/2;
             grid-column:2/3;
         }
-    </style>
-</head>
-<body>
-    <div class="mainContainer">
-        <div class="box-1 item-1">Box-1</div>
-        <div class="box-2 item-2">Box-2</div>
-        <div class="box-2 item-3">Box-3</div>
-        <div class="box-2 item-4">Box-4</div>
-        <div class="box-2 item-5">Box-5</div>
-        <div class="box-3 item-6">Box-6</div>
-        <div class="box-3 item-7">Box-7</div>
-        <div class="box-3 item-8">Box-8</div>
-        <div class="box-4 item-9">Box-9</div>
-        <div class="box-4 item-10">Box-10</div>
-    </div>
-</body>
-</html>
+        .item-9{
+         grid-row:2/3;
+         grid-column:1/2;
+        }
