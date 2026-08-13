@@ -1,7 +1,7 @@
 .mainContainer{
             display: grid;
             border:1px solid black;
-            grid-template-columns:180px 180px 100px;
+            grid-template-columns:[First]180px [Second]180px [Third]100px;
             grid-template-rows:100px 120px 150px 200px;
         }
         .box-1{

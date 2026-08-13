@@ -1,0 +1,57 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+#toggle{
+ display:none;
+}
+.dashboardContainer{
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ height:100vh;
+ width:180px;
+ background-color:antiquewhite
+
+}
+.headingLogo{
+ height:20px;
+ width:20px;
+}
+.toggleButton{
+ position:absolute;
+ top:3px;
+ right:0px;
+ list-style: none;
+}
+.toggleButton li{
+ cursor: pointer;
+}
+.navigationMenu ul li{
+ display: flex;
+ margin-top:2rem;
+ padding-left:0.3rem;
+}
+.navigationMenu ul li a{
+ display: flex;
+ text-decoration: none;
+ gap:0.3rem;
+}
+.settings{
+ margin-bottom:1rem;
+ padding-left:0.3rem;
+}
+.settings ul li a{
+ text-decoration:none;
+}
+#toggle:checked ~.dashboardContainer{
+ width:2rem;
+}
+#toggle:checked ~ .dashboardContainer .menuText{
+ display: none;
+}
+#toggle:checked ~ .dashboardContainer .logo{
+ display:none;
+}
