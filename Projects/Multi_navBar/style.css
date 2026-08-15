@@ -1,0 +1,54 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+.mainNav{
+ position:relative;
+ width:100vw;
+ height:2.4rem;
+ background-color:blueviolet;
+}
+.mainNav ul{
+ display:flex;
+ position:relative;
+ gap:2rem;
+ list-style:none;
+ top:0.3rem;
+ padding-left:4.4rem;
+}
+.mnavItem a{
+ color:darkgrey;
+ text-decoration:none;
+}
+.mnavItem span{
+ color:white;
+ padding-left:0.3rem;
+}
+.mnavFirst{
+ position:relative;
+}
+.indivNav{
+ position:absolute;
+ top:100%;
+ top:2.0rem;
+ height:2rem;
+ margin-left:1.1rem;
+ background-color:blanchedalmond;
+}
+.indivNav ul{
+ display: none;
+ flex-direction: row;
+}
+.mnavItem:hover .indivNav ul{
+ display: flex;
+}
+.indivNavItem{
+ white-space:nowrap;
+}
+.indivNav input{
+ border-radius: 0.4rem;
+ border:0.09rem solid black;
+ padding:0.2rem;
+ background-color:blanchedalmond;
+}
