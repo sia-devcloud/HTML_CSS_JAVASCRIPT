@@ -110,3 +110,45 @@
 #businessToggle:checked ~ .businessNav{
  display:flex;
 }
+.mainSection{
+ display:flex;
+ align-items:flex-start;
+ /* flex-direction: column; */
+}
+.headingElement{
+ padding:4rem;
+}
+.headingElement h1{
+ font-size:4rem;
+}
+.headingData p{
+ margin-top:1rem;
+ margin-bottom:1rem;
+ font-size:1.8rem;
+}
+.headingElement button{
+ margin-top:2rem;
+ padding-left:1.5rem;
+ padding-right:1.5rem;
+ padding-top:0.7rem;
+ padding-bottom:0.7rem;
+ font-size:1.4rem;
+ border-radius: 1rem;
+ background-color:blue;
+ color:white;
+}
+.headingElement ul li{
+ list-style:none;
+ margin-top:1rem;
+}
+ .demoImage img{
+ /* position:absolute; */
+ height:50rem;
+ width:40rem;
+ right:4rem;
+}
+.mainHeading{
+ font-weight: 600;
+ line-height: 100%;
+}
+
