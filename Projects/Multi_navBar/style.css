@@ -38,14 +38,14 @@
  position:relative;
 }
 .indivNav{
+ display: none;
  position:fixed;
  width:100vw;
  top:100%;
  left:0;
  top:3.4rem;
  height:4rem;
- background-color:blanchedalmond;
- display: none;
+ background-color:aqua;
 }
 .indivNav ul{
  display: flex;
@@ -107,7 +107,10 @@
 #businessToggle{
  display:none;
 }
-#businessToggle:checked ~ .businessNav{
+/* #businessToggle:hover ~ .businessNav{
+ display:flex;
+} */
+ #businessToggle:hover ~ .businessNav{
  display:flex;
 }
 .mainSection{
