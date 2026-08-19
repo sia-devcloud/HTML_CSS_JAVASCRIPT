@@ -149,9 +149,94 @@
  height:50rem;
  width:40rem;
  right:4rem;
+ margin-bottom:2rem;
 }
 .mainHeading{
  font-weight: 600;
  line-height: 100%;
 }
+.footerSection {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+}
+.footer{
+ display:flex;
+ justify-content:space-around;
+}
+.appBadge{
+ display:flex;
+ flex-direction: column;
+}
+.footer ul{
+ list-style:none;
+}
+.footer ul li a{
+ list-style:none;
+ text-decoration: none;
+}
+.appBadge a img{
+ height:3rem;
+}
+/* Mid section one */
+.midHeading{ 
+    font-size:2rem; 
+} 
+.midContainer{ 
+    display:flex;
+    justify-content:space-around;
+    background-color:rgba(245, 244, 244, 0.988);
+}
+.textDetails{
+  list-style: none;
+}
+.form{ 
+    /* border-radius: 1.8rem; */
+    margin:0.8rem; 
+    background-color:white; 
+    height:auto; 
+    width:35rem; 
+} 
+.form p{ 
+    align-self: center;
+    width:80%;
+    box-sizing: border-box; 
+}
+.form form{ 
+    display:flex; 
+    flex-direction: column; 
+    border:none; 
+    
+} 
+.form fieldset{
+  border:none;
+}
+.form form input{ 
+    height:3.5rem; 
+    margin-top:1.3rem; 
+    margin-bottom:1.3rem; 
+    width:80%; 
+    align-self: center; 
+    border:2px solid grey; 
+    border-radius: 0.8rem; 
+    font-size:1rem; 
+    /*box-sizing:border-box;*/ 
+    padding-left:0.4rem; 
+} 
+.form button{ 
+    width:80%; 
+    padding:1rem; 
+    font-weight: bold; 
+    margin: 1.5rem auto;
+    border-radius: 0.8rem;
+    background-color:blue;
+    color:white;
+    font-size:1.2rem;
+    cursor:pointer;
+ 
+} 
+.textDetails{ 
+    align-self:center; 
+} 
+/* Mid section end*/
+
 
