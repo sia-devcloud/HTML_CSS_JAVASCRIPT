@@ -1,0 +1,193 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+body{
+ margin-top:3.1rem;
+}
+.deviceMessage{
+  display:none;
+}
+.mainContent::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Checkbox used for Media queries */
+#menuToggle{
+ display:none;
+}
+/* Menu selection bar for low width devices */
+.menuIcon{
+ display:none;
+ font-size:1.5rem;
+ cursor:pointer;
+ margin:1rem;
+}
+.menuControl{
+  position:relative;
+}
+.topNav{
+ background-color:cadetblue;
+ display:flex;
+ position:fixed;
+ align-items: center;
+ top:0;
+ left:0;
+ justify-content: space-between;
+ height:3rem;
+ width:100%;
+
+}
+.pageContent{
+ display:flex;
+ flex-direction:column;
+ min-height:100vh;
+}
+html, body{
+ height:100%;
+}
+.mainContent{
+ flex:1;
+}
+.brandName{
+ font-size:1.5rem;
+ font-weight: bold;
+ padding-left:1rem;
+}
+.menuItems{
+ display:flex;
+ gap:2rem;
+ margin-right:3rem;
+ list-style:none;
+ font-size:1.2rem;
+}
+.menuItems li a{
+ text-decoration:none;
+}
+
+.RWD_demo{
+ text-align: center;
+ margin-bottom:0.6rem;
+}
+.textContent{
+ font-size:1.5rem;
+ color:cornflowerblue;
+ margin-bottom:2rem;
+ margin-left:2rem;
+ display: flex;
+ flex-wrap:wrap
+}
+.imageContent{
+ float:right;
+ margin-left:1.5rem;
+ margin-bottom:1rem;
+}
+.imageContent img{
+ height:10rem;
+ width:12rem;
+ display:block;
+}
+
+/* Footer section starts*/
+.footerSection {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+}
+.footer{
+ display:flex;
+ justify-content:space-around;
+ /* align-items:flex-start; */
+ bottom:0;
+}
+.appBadge{
+ display:flex;
+ flex-direction: column;
+}
+.footer ul{
+ list-style:none;
+ margin:0;
+ padding:0;
+}
+.footer ul li a{
+ list-style:none;
+ text-decoration: none;
+}
+.footer ul li{
+ margin-bottom: 0.1rem;
+}
+.appBadge a img{
+ height:3rem;
+}
+/*Footer section ends*/
+/* Responsive Web Design starts */
+@media (max-width:900px){
+  .menuItems{
+    display:none;
+    margin-top:0.3rem;
+  }
+  .menuControl{
+    position:relative;
+  }
+  .menuIcon{
+    display:block;
+    position:relative;
+    font-size:1.5rem;
+    right:7rem;
+  }
+   /* Show dropdown when menu icon is clicked */
+  #menuToggle:checked ~ .menuItems{
+    display: flex;
+    flex-direction:column;
+    position:absolute;
+    top:calc(100% + 0.5rem);
+    right:0;
+    top:3rem;
+    background-color:bisque;
+    width:7rem;
+    padding-bottom:1rem;
+    padding-left:0.5rem;
+  }
+    /* Responsive Web Design ends */
+ .textContent{
+  color:black;
+  /* font-size:0.5rem; */
+ }
+ .imageContent img{
+  height:10rem;
+  width:12rem;
+ }
+ .footer{
+  display:flex;
+  flex-direction:column;
+ }
+ /* .mainContent{
+  display:flex;
+  flex-direction:column; */
+ }
+}
+@media (max-width:340px){
+  .menuIcon{
+    display:block;
+    position:relative;
+    font-size:1.5rem;
+    right:0;
+  }
+}
+@media (max-width:180px){
+  .pageContent{
+    display:none;
+  }
+  .deviceMessage{
+    display:grid;
+    width:100vw;
+    height:100vh;
+    align-items:center;
+    text-align:center;
+    font-weight: bold;
+  }
+}
+
+
+
