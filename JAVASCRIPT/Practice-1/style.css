@@ -1,0 +1,52 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background-color: azure;
+  /* padding-top:2rem; */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+main{
+  background-color:aquamarine;
+  height:100vh;
+  width:100vw;
+}
+.mainHeading{
+  text-align: center;
+  color:blueviolet;
+  margin-top:1rem;
+}
+.navBar{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:2rem;
+  gap:3rem;
+  
+}
+.add2bag{
+  padding:0.4rem;
+  background-color:yellowgreen;
+  border-radius:0.6rem;
+  cursor:pointer;
+  box-shadow: 2px 3px 6px;
+}
+.move2wish{
+  padding:0.4rem;
+  background-color:bisque;
+  border-radius:0.6rem;
+  cursor:pointer;
+  box-shadow: 2px 3px 6px;
+}
+.add22item{
+  padding:0.4rem;
+  background-color:rgb(224, 143, 177);
+  border-radius:0.6rem;
+  cursor:pointer;
+  box-shadow: 2px 3px 6px;
+}

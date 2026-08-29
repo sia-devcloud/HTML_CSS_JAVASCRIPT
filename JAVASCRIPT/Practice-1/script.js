@@ -22,12 +22,12 @@ document.querySelector('.add22item').addEventListener('click', function(){
 
 
 
-// document.querySelector('.add2bag').addEventListener('click', function(){
-//   alert('Item added to bag')
-// });
-// document.querySelector('.move2wish').addEventListener('click', function(){
-//   alert('Item added to Wishlist')
-// });
-// document.querySelector('.add22item').addEventListener('click', ()=>{
-//   alert('Added two pieces of the item')
-// });
+document.querySelector('.add2bag').addEventListener('click', function(){
+  alert('Item added to bag')
+});
+document.querySelector('.move2wish').addEventListener('click', function(){
+  alert('Item added to Wishlist')
+});
+document.querySelector('.add22item').addEventListener('click', ()=>{
+  alert('Added two pieces of the item')
+});
