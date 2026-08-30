@@ -4,49 +4,33 @@
   box-sizing:border-box;
 }
 body{
-  background-color: azure;
-  /* padding-top:2rem; */
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
-
 }
-main{
-  background-color:aquamarine;
+.calContainer{
+  background-color:azure;
   height:100vh;
-  width:100vw;
+  width:300px;
 }
-.mainHeading{
-  text-align: center;
-  color:blueviolet;
-  margin-top:1rem;
+#inputValue{
+  padding:15px;
+  border-radius: 5px;
+  margin:15px;
+  width:90%;
 }
-.navBar{
-  display:flex;
-  justify-content:center;
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.calButton{
+  height: 55px;
+  width:55px;
+  display: flex;
+  justify-content: center;
   align-items:center;
-  margin-top:2rem;
-  gap:3rem;
-  
-}
-.add2bag{
-  padding:0.4rem;
-  background-color:yellowgreen;
-  border-radius:0.6rem;
-  cursor:pointer;
-  box-shadow: 2px 3px 6px;
-}
-.move2wish{
-  padding:0.4rem;
-  background-color:bisque;
-  border-radius:0.6rem;
-  cursor:pointer;
-  box-shadow: 2px 3px 6px;
-}
-.add22item{
-  padding:0.4rem;
-  background-color:rgb(224, 143, 177);
-  border-radius:0.6rem;
-  cursor:pointer;
-  box-shadow: 2px 3px 6px;
+  flex-wrap: wrap;
+  margin:15px;
+  font-size:25px;
+  font-weight: bold;
 }

@@ -1,21 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript_Practice</title>
-    <link rel="stylesheet" href="Rough.css">
-    <script src="Rough.js" defer></script>
-</head>
-<body>
-    <main>
-        <h1 class="mainHeading">JavaScript Practice</h1>
-        <div class="navBar">
-            <button class="add2bag">Add to Bag</button>
-            <button class="move2wish">MOVE TO WISHLIST</button>
-            <button class="add22item">Add 1+1 sale item</button>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Rough.css">
+        <script src="Rough.js"></script>
+        <title>Simple_Calculator</title>
+    </head>
+    <body>
+        <div class="calContainer">
+            <input type="text" id="inputValue" readonly>
+            <div class="buttonContainer">
+                <button class="calButton" onclick="currDisplay=''; document.querySelector('#inputValue').value=currDisplay;";>C</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'1'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">1</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'2'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">2</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'+'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">+</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'3'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">3</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'4'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">4</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'-'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">-</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'5'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">5</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'6'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">6 </button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'*'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">*</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'7'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay))">7</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'8'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">8</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'/'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">/</button>
+                
+                <button class="calButton"onclick="currDisplay=eval(currDisplay); document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));" >=</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'9'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">9</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'0'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">0</button>
+                
+                <button class="calButton" onclick="currDisplay=currDisplay+'.'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">.</button>
+            </div>
         </div>
-        <h1 id="cartSummary"></h1>
-    </main>
-</body>
+        <script>
+            let currDisplay='';
+        </script>
+    </body>
 </html>
