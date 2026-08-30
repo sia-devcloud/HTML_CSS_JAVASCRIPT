@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+ text-align: center;
+ margin:20px;
+}
+h1{
+  font-size: 60px;
+  color: blue;
+}
+button{
+  margin:30px 10px;
+  padding:25px 40px;
+  border-radius: 10px;
+  border:1px solid gray;
+  box-shadow: 3px 5px 7px;
+  background-color:aquamarine;
+  font-weight: bold;
+  cursor:pointer;
+}
+.age{
+  font-size:20px;
+  margin:25px;
+}
+.gender{
+  font-size:20px;
+}
