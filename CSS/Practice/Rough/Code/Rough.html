@@ -4,50 +4,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Rough.css">
-        <script src="Rough.js"></script>
-        <title>Simple_Calculator</title>
+        <script src="Rough.js" defer></script>
+        <title>Ticket_Discounting</title>
     </head>
     <body>
-        <div class="calContainer">
-            <input type="text" id="inputValue" readonly>
-            <div class="buttonContainer">
-                <button class="calButton" onclick="currDisplay=''; document.querySelector('#inputValue').value=currDisplay;";>C</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'1'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">1</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'2'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">2</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'+'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">+</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'3'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">3</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'4'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">4</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'-'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">-</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'5'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">5</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'6'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">6 </button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'*'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">*</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'7'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay))">7</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'8'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">8</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'/'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">/</button>
-                
-                <button class="calButton"onclick="currDisplay=eval(currDisplay); document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));" >=</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'9'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">9</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'0'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">0</button>
-                
-                <button class="calButton" onclick="currDisplay=currDisplay+'.'; document.querySelector('#inputValue').value=currDisplay; console.log(currDisplay); console.log(typeof(currDisplay));">.</button>
-            </div>
-        </div>
+        <h1 class="mainHeading">Ticket Discounting Rules</h1>
+        <p class="age final_discount"></p>
+        <p class="gender"></p>
         <script>
-            let currDisplay='';
+            let age=10;
+            let gender='Female';
+            let finalDiscount;
+            if(age<5){
+                document.querySelector('.age').innerText='Your age is less 5years. You do not need to book a ticket';
+                console.log('You do not need a ticket');
+                finalDiscount=100;
+            }else if(age>=5 && age<=8){
+                document.querySelector('.age').innerText='Your age is more than or equal to 5years but less than or equal 8years. Hence, You are eligible for half ticket';
+                console.log('You are eligible for half ticket');
+                finalDiscount=50;
+            }
+            else if(age>8 && age<=65){
+                if(gender==='Female'){
+                    document.querySelector('.age').innerText='You are eligible for 50% discounte on the ticket price';
+                    finalDiscount=50;
+                }
+                else{
+                document.querySelector('.age').innerText='You have to book a full ticket no discount applicable';
+                finalDiscount=0;
+                }
+            }
+            else if(age>65){
+                if(gender=='Female'){
+                    document.querySelector('.gender').innerText='For female there is a discount of 50% on the ticket price';
+                    finalDiscount=50;
+                }
+                else{
+                document.querySelector('.age').innerText='You are above 65year. Hence, you are eligible for 30% discount on ticket price';
+                console.log('You are eligible for 30% discount on ticket price');
+                finalDiscount=30;
+                }
+            }
+            console.log(`You are eligible for ${finalDiscount}% discount on the ticket price`);
+            document.querySelector('.final_discount').innerText=`You are eligible for ${finalDiscount}% discount on the ticket price`
         </script>
     </body>
 </html>

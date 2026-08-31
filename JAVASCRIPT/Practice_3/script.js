@@ -12,6 +12,10 @@ A choose Stump and B choose Stump --> Tie
 A choose Stump and B choose Bat --> A won
 */
 
+function generateComputerChoice(){
+  
+}
+
 let computerChoice;
 //Enabling 'Ball' button
 document.querySelector('.ball').addEventListener('click', function(){
