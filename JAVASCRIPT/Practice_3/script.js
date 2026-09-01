@@ -10,6 +10,7 @@ A choose Ball and B choose Bat --> B won
 A choose Stump and B choose Ball--> B won
 A choose Stump and B choose Stump --> Tie
 A choose Stump and B choose Bat --> A won
+check
 */
 
 function generateComputerChoice(){
