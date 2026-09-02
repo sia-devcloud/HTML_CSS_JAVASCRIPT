@@ -13,29 +13,36 @@ A choose Stump and B choose Bat --> A won
 check
 */
 
+// Function to generate computer choice
 function generateComputerChoice(){
-  
-}
-
-let computerChoice;
-//Enabling 'Ball' button
-document.querySelector('.ball').addEventListener('click', function(){
-  // console.log('You choose Ball');
-  //Setting computer choice
-  let randomNumber=Math.random()*3;
-  // console.log(randomNumber);
+    let randomNumber=Math.random()*3;
   if(randomNumber>=0 && randomNumber<1){
     computerChoice='Stump';
-    // console.log('Computer choose Stump');
   }
   else if(randomNumber>=1 && randomNumber<2){
     computerChoice='Ball';
-    // console.log('Computer choose Ball');
   }
   else{
     computerChoice='Bat';
-    // console.log('Computer choose Bat')
   }
+  return computerChoice;
+}
+
+//Function to display message in console
+function displayInConsole(computerChoice, resultMsg){
+  console.log(`You choose Ball and Coumputer choose ${computerChoice} ${resultMsg}`)
+}
+
+//Displays the output in Webpage pop up
+function displayInWebpage(computerChoice, resultMsg){
+  alert(`You choose Ball and Coumputer choose ${computerChoice} ${resultMsg}`);
+}
+  
+
+
+document.querySelector('.ball').addEventListener('click', function(){
+  //Setting computer choice
+let computerChoice=generateComputerChoice();
 //Finding the result
   let resultMsg;
   if(computerChoice==='Bat'){
@@ -48,26 +55,17 @@ document.querySelector('.ball').addEventListener('click', function(){
     resultMsg="You won";
   }
   //Displays the output in console
-  console.log(`You choose Ball and Coumputer choose ${computerChoice} ${resultMsg}`)
+displayInConsole(computerChoice, resultMsg);
 
   //Displays the output in Webpage pop up
-  alert(`You choose Ball and Coumputer choose ${computerChoice} ${resultMsg}`)
+  displayInWebpage(computerChoice, resultMsg);
 });
 
 
 ////Enabling 'Bat' button
 document.querySelector('.bat').addEventListener('click', function(){
   //Setting computer choice
-  let randomNumber=Math.random()*3;
-  if(randomNumber>=0 && randomNumber<1){
-    computerChoice='Stump';
-  }
-  else if(randomNumber>=1 && randomNumber<2){
-    computerChoice='Ball';
-  }
-  else{
-    computerChoice='Bat'
-  }
+  let computerChoice=generateComputerChoice();
 
   //Finding result
   let resultMsg;
@@ -82,26 +80,17 @@ document.querySelector('.bat').addEventListener('click', function(){
   }
 
   //Displays the output in console
-  console.log(`You choose Bat and Computer choose ${computerChoice} ${resultMsg}`)
+displayInConsole(computerChoice, resultMsg);
 
   //Displays the output in Webpage pop up
-  alert(`You choose Bat and Coumputer choose ${computerChoice} ${resultMsg}`)
+  displayInWebpage(computerChoice, resultMsg);
 })
 
 //Enabling stump button
 
 document.querySelector('.stump').addEventListener('click', function(){
   //Setting computer choice
-  let randomNumber=Math.random()*3;
-  if(randomNumber>=0 && randomNumber<1){
-    computerChoice='Stump';
-  }
-  else if(randomNumber>=1 && randomNumber<2){
-    computerChoice='Ball';
-  }
-  else{
-    computerChoice='Bat'
-  }
+  let computerChoice=generateComputerChoice();
 
   //Finding result
   let resultMsg;
@@ -116,8 +105,8 @@ document.querySelector('.stump').addEventListener('click', function(){
   }
 
   //Displays the output in console
-  console.log(`You choose Stump and Computer choose ${computerChoice} ${resultMsg}`)
+displayInConsole(computerChoice, resultMsg);
 
   //Displays the output in Webpage pop up
-  alert(`You choose Stump and Coumputer choose ${computerChoice} ${resultMsg}`)
+  displayInWebpage(computerChoice, resultMsg);
 })
