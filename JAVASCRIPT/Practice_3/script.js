@@ -17,96 +17,102 @@ check
 function generateComputerChoice(){
     let randomNumber=Math.random()*3;
   if(randomNumber>=0 && randomNumber<1){
-    computerChoice='Stump';
+    coumputerMove='Stump';
   }
   else if(randomNumber>=1 && randomNumber<2){
-    computerChoice='Ball';
+    coumputerMove='Ball';
   }
   else{
-    computerChoice='Bat';
+    coumputerMove='Bat';
   }
-  return computerChoice;
+  return coumputerMove;
 }
 
 //Function to display message in console
-function displayInConsole(computerChoice, resultMsg){
-  console.log(`You choose Ball and Coumputer choose ${computerChoice} ${resultMsg}`)
+function displayInConsole(userMove, coumputerMove, resultMsg){
+  console.log(`You choose ${userMove} and Coumputer choose ${coumputerMove} ${resultMsg}`)
 }
 
 //Displays the output in Webpage pop up
-function displayInWebpage(computerChoice, resultMsg){
-  alert(`You choose Ball and Coumputer choose ${computerChoice} ${resultMsg}`);
+function displayInWebpage(userMove, coumputerMove, resultMsg){
+  alert(`You choose ${userMove} and Coumputer choose ${coumputerMove} ${resultMsg}`);
+}
+
+//Function to generate result
+function generateResult(userMove, coumputerMove){
+  if(userMove==='Ball'){
+      if(coumputerMove==='Bat'){
+        return"Computer won";
+  }
+      else if(coumputerMove==='Ball'){
+        return"It's a Tie";
+  }
+      else{
+        return"You won";
+  }
+  }
+  else if(userMove==='Bat'){
+      if(coumputerMove==='Ball'){
+          return`You won`;
+  }
+      else if(coumputerMove==='Bat'){
+        return`It's a Tie`;
+  }
+      else{
+        return'Computer won'
+  }
+  }
+  else{
+      if(coumputerMove==='Ball'){
+        return`Computer won`;
+  }
+      else if(coumputerMove==='Bat'){
+        return`You won`;
+  }
+      else{
+        return"It's a Tie";
+  }
+  }
 }
   
 
 
 document.querySelector('.ball').addEventListener('click', function(){
   //Setting computer choice
-let computerChoice=generateComputerChoice();
-//Finding the result
-  let resultMsg;
-  if(computerChoice==='Bat'){
-    resultMsg="Computer won";
-  }
-  else if(computerChoice==='Ball'){
-    resultMsg="It's a Tie";
-  }
-  else{
-    resultMsg="You won";
-  }
-  //Displays the output in console
-displayInConsole(computerChoice, resultMsg);
+   let coumputerMove=generateComputerChoice();
+   
+  //Finding the result
+   let resultMsg=generateResult('Ball', coumputerMove);
 
-  //Displays the output in Webpage pop up
-  displayInWebpage(computerChoice, resultMsg);
+  //Displaying result
+   let resultConsole=displayInConsole('Ball', coumputerMove, resultMsg);
+   let resultWebpage=displayInWebpage('Ball', coumputerMove, resultMsg);
+
 });
-
 
 ////Enabling 'Bat' button
 document.querySelector('.bat').addEventListener('click', function(){
   //Setting computer choice
-  let computerChoice=generateComputerChoice();
+  let coumputerMove=generateComputerChoice();
 
   //Finding result
-  let resultMsg;
-  if(computerChoice==='Ball'){
-    resultMsg=`You won`;
-  }
-  else if(computerChoice==='Bat'){
-    resultMsg=`It's a Tie`;
-  }
-  else{
-    resultMsg='Computer won'
-  }
+  let resultMsg=generateResult('Bat', coumputerMove);
 
-  //Displays the output in console
-displayInConsole(computerChoice, resultMsg);
-
-  //Displays the output in Webpage pop up
-  displayInWebpage(computerChoice, resultMsg);
+  //Displaying result
+  let resultConsole=displayInConsole('Bat', coumputerMove, resultMsg);
+   let resultWebpage=displayInWebpage('Bat', coumputerMove, resultMsg);
 })
 
 //Enabling stump button
 
 document.querySelector('.stump').addEventListener('click', function(){
   //Setting computer choice
-  let computerChoice=generateComputerChoice();
+  let coumputerMove=generateComputerChoice();
 
   //Finding result
-  let resultMsg;
-  if(computerChoice==='Ball'){
-    resultMsg=`Computer won`;
-  }
-  else if(computerChoice==='Bat'){
-    resultMsg=`You won`;
-  }
-  else{
-    resultMsg="It's a Tie";
-  }
+  let resultMsg=generateResult('Stump', coumputerMove);
 
-  //Displays the output in console
-displayInConsole(computerChoice, resultMsg);
-
-  //Displays the output in Webpage pop up
-  displayInWebpage(computerChoice, resultMsg);
+  //Displaying result
+  let resultConsole=displayInConsole('Stump', coumputerMove, resultMsg);
+  let resultWebpage=displayInWebpage('Stump', coumputerMove, resultMsg);
 })
