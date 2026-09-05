@@ -30,53 +30,71 @@ function generateComputerChoice(){
 
 //Function to display message in console
 function displayInConsole(userMove, coumputerMove, resultMsg){
-  console.log(`You choose ${userMove} and Coumputer choose ${coumputerMove} ${resultMsg}`)
+  console.log(`You choose ${userMove} and Coumputer choose ${coumputerMove} ${resultMsg} ${score.displayScore()}`)
 }
 
 //Displays the output in Webpage pop up
 function displayInWebpage(userMove, coumputerMove, resultMsg){
-  alert(`You choose ${userMove} and Coumputer choose ${coumputerMove} ${resultMsg}`);
+  alert(`You choose ${userMove} and Coumputer choose ${coumputerMove} ${resultMsg}  ${score.displayScore()}`);
+}
+
+//Object to store results
+
+let score={
+  win:0,
+  lost:0,
+  Tie:0,
+  displayScore: function(){
+    return `total win:${score.win} total lost:${score.lost} total Tie:${score.Tie}`
+  }
 }
 
 //Function to generate result
 function generateResult(userMove, coumputerMove){
   if(userMove==='Ball'){
       if(coumputerMove==='Bat'){
+        score.lost++;
         return"Computer won";
   }
       else if(coumputerMove==='Ball'){
+        score.Tie++;
         return"It's a Tie";
   }
       else{
+        score.win++;
         return"You won";
   }
   }
   else if(userMove==='Bat'){
       if(coumputerMove==='Ball'){
+          score.win++;
           return`You won`;
   }
       else if(coumputerMove==='Bat'){
+        score.Tie++;
         return`It's a Tie`;
   }
       else{
+        score.lost++;
         return'Computer won'
   }
   }
   else{
       if(coumputerMove==='Ball'){
+        score.lost++;
         return`Computer won`;
   }
       else if(coumputerMove==='Bat'){
+        score.win++;
         return`You won`;
   }
       else{
+        score.Tie++;
         return"It's a Tie";
   }
   }
 }
   
-
-
 document.querySelector('.ball').addEventListener('click', function(){
   //Setting computer choice
    let coumputerMove=generateComputerChoice();
